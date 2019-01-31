@@ -1,6 +1,6 @@
 .u-center-text { text-align: center !important; }
 
-.u-center-center{
+.u-center-content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9,5 +9,9 @@
 
 .u-font-default{
     font-size: $default-font-size;
+}
+
+.u-center-item{
+    margin: 0 auto;
 }
 

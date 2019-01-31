@@ -6,22 +6,23 @@
     box-sizing: inherit;
 }
 
-html {
+// html {
+
     // This defines what 1rem is
-    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    // font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
-    @include respond(tab-land) { // width < 1200?
-        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
-    }
+    // @include respond(tab-land) { // width < 1200?
+    //     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    // }
 
-    @include respond(tab-port) { // width < 900?
-        font-size: 50%; //1 rem = 8px, 8/16 = 50%
-    }
+    // @include respond(tab-port) { // width < 900?
+    //     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    // }
     
-    @include respond(big-desktop) {
-        font-size: 75%; //1rem = 12, 12/16
-    }
-}
+    // @include respond(big-desktop) {
+    //     font-size: 75%; //1rem = 12, 12/16
+    // }
+// }
 
 body {
     box-sizing: border-box;
@@ -33,19 +34,19 @@ body {
 }
 
 /* width */
-::-webkit-scrollbar {
+::-webkit-scrollBar {
     width: 10px;
 }
   
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollBar-track {
     box-shadow: inset 0 0 5px $color-grey-dark-3; 
     border-radius: 10px;
     background: $color-grey-dark-2; 
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollBar-thumb {
     background-image:  linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -56,6 +57,6 @@ body {
 }
   
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollBar-thumb:hover {
     background:$color-primary-dark; 
 }
